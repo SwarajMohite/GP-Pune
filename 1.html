@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: wheat;
+        }
+        .box {
+            margin: 25%;
+            height: 400px;
+            width: 300px;
+            border-radius: 10px;
+            background-color: burlywood;
+        }
+        .image {
+            height: 47%;
+            width: 96%;
+            border: 5px solid burlywood;
+            border-radius: 10px;
+            background-color: yellow;
+        }
+        .box .image img {
+            height: 70%;
+            object-fit: cover;
+            object-position: center;
+            margin: 0 25%;
+        }
+        h4 {
+            font-size: 30px;
+            text-align: center;
+            color: brown;
+        }
+        h5 {
+            font-size: 25px;
+            text-align: center;
+            margin: 4px 0;
+            color: red;
+        }
+        .buttons {
+            text-align: center;
+            margin: 20px;
+        }
+        button {
+            text-align: center;
+            padding: 12px 20px;
+            border-style: dashed;
+            background-color: rgb(236, 218, 194);
+        }
+        .remove {
+            background-color: rgb(236, 187, 123);
+            color: red;
+        }
+        .confirm {
+            background-color: rgb(123, 236, 123);
+            color: green;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="image">
+            <img src="school.png" alt="School Image">
+        </div>
+        <h4>GPP Admission</h4>
+        <h5>Not Confirmed</h5>
+        <div class="buttons">
+            <button class="remove">Remove</button>
+            <button class="confirm">Confirm</button>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var status = document.querySelector("h5");
+            var confirmButton = document.querySelector(".confirm");
+            var removeButton = document.querySelector(".remove");
+
+            confirmButton.addEventListener("click", function() {
+                status.innerHTML = "Confirmed";
+                status.style.color = "green";
+            });
+
+            removeButton.addEventListener("click", function() {
+                status.innerHTML = "Removed";
+                status.style.color = "red";
+            });
+        });
+    </script>
+</body>
+</html>

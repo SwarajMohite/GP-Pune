@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background-color:rgb(201, 100, 100);
+}
+.head{
+    position: sticky;
+    background-image: url('building.jpg');
+    background-attachment: fixed;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+body::before{
+    content: '';
+    
+}
+
+nav {
+    /* position: fixed; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 82px;
+    padding:0 23px;
+    background-color: rgb(219, 56, 56);
+}
+
+nav ul {
+    display: flex;
+
+    justify-content: center;
+}
+
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: rgb(118, 14, 14);
+    /* text-size-adjust: 1.01rem; */
+}
+
+.left{
+    color:rgb(138, 93, 37);
+    margin-left: 46px;
+    font-size: 1.7rem;
+}
+main{
+    margin-top: 7px;
+    text-align: center;
+    /* align-items: center; */
+}
+
+.msg1{
+    
+    color: white;
+    font-size: 2.7rem;
+}
+marquee{
+    margin-top: 30px;
+    color: white;
+    font-size: 1.3rem;
+    margin:0 80px;
+}
+
+.school{
+    margin-top: 40px;
+}
+
+hr{
+    border: 0;
+            height: 4px;
+            margin: 0 60px 10px 60px;
+            background-color: rgb(121, 77, 77);
+}
+.firstSection{
+    color: white;
+    margin:25px;
+    padding: 18px;
+    border: 1px solid ;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+i{
+    font-size:1.7rem;
+}
+.secondSection, .thirdSection{
+    color: white;
+    margin:25px;
+    padding: 18px;
+    border: 1px solid ;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+footer{
+    position: relative;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 63px;
+    padding:0 23px;
+    background-color: rgb(219, 56, 56);
+}
+/* General Body Styles */
+body {
+    background-color: #F5F5DC; /* Beige */
+    color: #4E342E; /* Dark Brown */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #D5A77A; /* Light Brown */
+}
+
+nav ul li a {
+    color: #FFFFFF; /* White */
+}
+
+nav ul li a:hover {
+    color: #B7410E; /* Rust */
+}
+
+/* Section Styles */
+.firstSection, .secondSection, .thirdSection {
+    background-color: #FFFFFF; /* White */
+    color: #4E342E; /* Dark Brown */
+    border: 1px solid #6F4F28; /* Dark Brown */
+}
+
+/* Horizontal Rule */
+hr {
+    background-color: #B7410E; /* Rust */
+}
+
+/* Footer */
+.footer {
+    background-color: #D5A77A; /* Light Brown */
+    color: #FFFFFF; /* White */
+}
